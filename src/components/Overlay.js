@@ -2,16 +2,19 @@ import React from "react";
 
 class Overlay extends React.Component {
   render() {
+
+    const { name, cname, src, type, description } = this.props.plant; 
     return (
       <div className="overlay">
         <div className="overlayCard">
           <img
-            class="overlayImg"
-            src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1205923822-612x612-1597694031.jpg"
+            className="overlayImg" alt="plant"
+            src={src}
           />
-          <h3>We are still working on this...</h3>
-          <h5>✨ 🌱 🚀 ✨ 🌱 🚀</h5>
-          <p>Please, come back soon!</p>
+          <h2>{name}</h2>
+          <h3>{cname}</h3>
+          <p>{type}</p>
+          <p>{description}</p>
         </div>
         <button
           className="closeBtn"

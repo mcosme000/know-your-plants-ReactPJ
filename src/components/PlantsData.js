@@ -1,6 +1,6 @@
 const plantsData = [
   {
-    id: 1,
+    id: 0,
     name: "Monstera",
     cname: "Monstera deliciosa",
     src:
@@ -11,7 +11,7 @@ const plantsData = [
   },
 
   {
-    id: 2,
+    id: 1,
     name: "Pakira",
     cname: "Pachira aquatica",
     src: "https://images.bunches.co.uk/products/large/money-plant-1.jpg",
@@ -20,7 +20,7 @@ const plantsData = [
   },
 
   {
-    id: 3,
+    id: 2,
     name: "Silk tree",
     cname: "Albizia julibrissin",
     src:
@@ -30,7 +30,7 @@ const plantsData = [
   },
 
   {
-    id: 4,
+    id: 3,
     name: "Ficus",
     cname: "Ficus microcarpa",
     src:
@@ -40,7 +40,7 @@ const plantsData = [
   },
 
   {
-    id: 5,
+    id: 4,
     name: "Eucalyptus",
     cname: "Eucalyptus orbifolia",
     src:
@@ -49,7 +49,7 @@ const plantsData = [
     description: "..",
   },
   {
-    id: 6,
+    id: 5,
     name: "Hydrangea",
     cname: "Hydrangea macrophylla",
     src:
