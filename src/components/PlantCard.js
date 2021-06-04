@@ -1,26 +1,23 @@
 import React from "react";
 
 class Plant extends React.Component {
-
   getId = () => {
-    this.props.handleClick(this.props.plant.id); 
-  }
-
-  
+    this.props.handleClick(this.props.plant.id);
+  };
 
   render() {
-
-    const { src, name, cname, type } = this.props.plant; 
+    const { src, name, type } = this.props.plant;
 
     return (
       <div className="plantCard">
-        <img src={src} alt="plant"/>
-        <h3>{name}</h3>
-        <h5>{cname}</h5>
-        <p>{type}</p>
-        <button onClick={this.getId}>
-          Read more
-        </button>
+        <div className="cardImg">
+          <img src={src} alt="plant" />
+        </div>
+        <div className="cardText">
+          <h3>{name}</h3>
+          <p>{type}</p>
+          <button onClick={this.getId}>Read more</button>
+        </div>
       </div>
     );
   }

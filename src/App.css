@@ -26,18 +26,33 @@ h1 {
 
 h2 {
   font-size: 35px;
-  margin-bottom: 10px;
 }
 
 h3 {
   font-size: 30px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+p::selection {
+  background: var(--primary);
+}
 span {
   font-weight: bold;
 }
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -108,7 +123,6 @@ span {
 .plantCard {
   background: var(--white);
   padding: 10px;
-  line-height: 1.8;
   margin: 10px;
 }
 
@@ -139,11 +153,19 @@ button:hover {
 }
 
 .overlayCard {
-  width: 70%;
-  max-width: 550px;
+  width: 80%;
+  max-width: 800px;
   background: var(--white);
-  padding: 10px;
+  padding: 20px;
   border: 2px solid black;
+}
+
+@media (min-width: 580px) {
+  .overlayCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 }
 
 .closeBtn {
@@ -151,6 +173,27 @@ button:hover {
   border-radius: 20px;
   background: var(--white);
   margin-top: 20px;
+}
+
+.overlayText,
+.overlayImg {
+  padding: 10px;
+}
+
+.overlayText {
+  text-align: left;
+}
+
+h2,
+h4 {
+  margin-bottom: 10px;
+}
+
+.common {
+  color: var(--primary);
+}
+.cname {
+  font-style: italic;
 }
 
 /* - - - FOOTER STYLES - - - */

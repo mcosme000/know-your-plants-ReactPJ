@@ -21,8 +21,6 @@ class Main extends React.Component {
         overlay: !prevState.overlay,
       };
     });
-    
-    console.log(this.state.number); 
   }
 
   handleClose() {
